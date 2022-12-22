@@ -30,7 +30,7 @@ function btn(e){
         
         
     }
-    else{
+    else if(0<=i || i>=9){
         navigator.vibrate(100);
         s=r.innerText+i;
         console.log(i)
