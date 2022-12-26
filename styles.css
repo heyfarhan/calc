@@ -29,6 +29,7 @@ body{
     border-radius: 50px;
     border: none;
     font-size: 30px;
+    transition: all .3ms ease-in-out;
 }
 .zero{
     width: 142px;
@@ -63,6 +64,8 @@ body{
 }
 svg{
     width: 60%;
-    margin-top:5px;
-    fill:black
+    fill:black;
+    padding: 18px;
+    position:relative;
+    right:5px;
 }
