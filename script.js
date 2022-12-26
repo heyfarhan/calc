@@ -35,7 +35,7 @@ function btn(e){
         
         
     }
-    else{
+    else if(0<=i || i>=9 || i=='.' || i=='+' || i=='-' || i=='*' || i=='/' ){
         s=r.innerText+i;
         // console.log(i)
         r.innerText=s;
