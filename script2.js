@@ -19,31 +19,33 @@ function btn(e){
     if(t>=0 || t<=9  || t=='/'|| t=='*'|| t=='-'|| t=='+' || t=='.'){
         r.innerText=r.innerText+t;
         e.target.style.transform="scale(1.1)";
+        navigator.vibrate(100);
         // console.log(e.target)
         // console.log(t)
     }
      if(t=='AC'){
         r.innerText='';
+        navigator.vibrate(100);
         e.target.style.transform="scale(1.1)";
     }
     else if(t=='⌫'){
         e.target.style.transform="scale(1.1)";
         r.innerText=r.innerText.slice(0,-1);
-        
+        navigator.vibrate(100);
     }
     else if(t=='%'){
         e.target.style.transform="scale(1.1)";
         // console.log(e)
         // console.log(t)
         r.innerText=r.innerText+'/100';
-        
+        navigator.vibrate(100);
     }
     else if(t=='='){
         e.target.style.transform="scale(1.1)";
         // console.log(e)
         // console.log(t)
         r.innerText=eval(r.innerText);
-        
+        navigator.vibrate(100);
     }
     window.addEventListener('transitionend',remove);
     
@@ -66,10 +68,11 @@ function key(e){
         e.style.transform="scale(1.1)";
         if (t=='%'){
             r.innerText=r.innerText+'/100';
-
+navigator.vibrate(100);
         }
         else {
         r.innerText=r.innerText+j;
+            navigator.vibrate(100);
         }
         
     }
@@ -78,6 +81,7 @@ function key(e){
         // console.log(t)
         e.style.transform="scale(1.1)";
         r.innerText=eval(r.innerText);
+        navigator.vibrate(100);
         
     }
     if(j=='Backspace' && t=='⌫'){
@@ -85,14 +89,14 @@ function key(e){
         // console.log(e)
         // console.log(t)
         r.innerText=r.innerText.slice(0,-1);
-        
+     navigator.vibrate(100);   
     }
     if(j=='Backspace' && t=='⌫'){
         e.style.transform="scale(1.1)";
         // console.log(e)
         // console.log(t)
         r.innerText=r.innerText.slice(0,-1);
-        
+        navigator.vibrate(100);
     }
     window.addEventListener('transitionend',remove);
     
