@@ -29,7 +29,7 @@ body{
     border-radius: 50px;
     border: none;
     font-size: 30px;
-    transition: all .3ms ease-in-out;
+    transition: all .25ms;
 }
 .zero{
     width: 142px;
@@ -68,4 +68,7 @@ svg{
     padding: 18px;
     position:relative;
     right:5px;
+}
+.p{
+    display: none;
 }
