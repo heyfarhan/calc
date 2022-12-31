@@ -1,7 +1,13 @@
 body{
     margin: 0;
     background: url('bg.jpg');
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
+        /* To prevent select of text on webpage */
+    -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+  /* to prevent background color which comes while clicking the button */
+  -webkit-tap-highlight-color: transparent; 
 }
 .section{
     display: flex;
