@@ -1,8 +1,9 @@
 body{
     margin: 0;
-    background-color: rgb(2, 67, 136);
+    background: url('bg.jpg');
+    backdrop-filter: blur(1px);
 }
-.div{
+.section{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +11,6 @@ body{
     
 }
 .calc{
-    background-color: rgb(35, 32, 32);
     height: 620px;
     width: 330px;
     border-radius: 40px;
@@ -18,18 +18,25 @@ body{
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    backdrop-filter: blur(23px);
+    /* background-color: rgb(35, 32, 32); */
+    background: linear-gradient(90deg, rgb(22, 22, 22) 20%, rgba(46, 46, 46, 0.99) 130%);
 }
 .row{
     display: flex;
     gap: 5px;
 }
 .btn{
+    cursor: pointer;
     height: 70px;
     width: 70px;
     border-radius: 50px;
     border: none;
     font-size: 30px;
     transition: all .25ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .zero{
     width: 142px;
@@ -38,13 +45,14 @@ body{
     background-color: rgb(255, 255, 255);
 }
 .op{
-    background-color: orange;
+    background-color: rgb(255, 166, 0);
 }
 .tool{
-    background-color: grey;
+    background-color: yellow;
 }
 .display{
     background-color: rgb(0, 255, 251);
+    background: linear-gradient(90deg, rgb(97, 213, 255) 0%, rgba(0, 170, 255, 0.81) 70%);
     width: 280px;
     height: 140px;
     border-radius: 25px;
@@ -62,13 +70,25 @@ body{
     text-overflow: ellipsis; 
 
 }
-svg{
-    width: 60%;
-    fill:black;
-    padding: 18px;
-    position:relative;
-    right:5px;
+
+.key{
+    position: absolute;
+    font-size: 10px;
+    color: rgb(43, 43, 43);
+    transform: translate(244px,48px);
+    font-family: sans-serif;
+    font-weight: bold;
 }
-.p{
-    display: none;
+.ac{
+    transform: translate(26px,50px);
+    
+}
+.backspace{
+    transform: translate(159px,49px);
+    
+}
+.back{
+    display: inline-block;
+    line-height: 65px;
+    text-align: center;
 }
