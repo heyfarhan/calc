@@ -113,3 +113,14 @@ function remove(e) {
     // console.log(e.target);
     e.target.style.transform = "scale(1)";
 }
+const count = document.getElementById('view');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/heyfarhan/calc/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		count.innerHTML = "👁 "+res.value;
+	})
+}
