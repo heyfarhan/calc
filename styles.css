@@ -98,3 +98,10 @@ body{
     line-height: 65px;
     text-align: center;
 }
+#view{
+    color: white;
+    margin-top: 10px;
+    position: absolute;
+    transform: translate(-360px,-350px);
+}
+
